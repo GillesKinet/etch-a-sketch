@@ -1,7 +1,15 @@
 * {
   margin: 0;
 }
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .grid-container {
+  width: 960px;
   display: flex;
   flex-direction: column;
   border: 1px black solid;
@@ -13,12 +21,17 @@
 }
 
 .grid-item {
-  width: 60px;
+  width: auto;
   height: 60px;
   flex: 1;
   border: 1px black solid;
 }
 
 .hover {
-  background-color: blue;
+  background-color: grey;
+}
+
+.new-grid-button {
+  align-self: center;
+  margin: 20px;
 }
