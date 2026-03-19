@@ -16,6 +16,6 @@ const gridItems = document.querySelectorAll(".grid-item");
 
 gridItems.forEach((item) => {
   item.addEventListener("mouseover", (e) => {
-    e.target.style.background = "blue";
+    e.target.classList.add("hover");
   });
 });
