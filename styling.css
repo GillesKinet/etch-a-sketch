@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 .grid-container {
   display: flex;
   flex-direction: column;
@@ -16,6 +19,6 @@
   border: 1px black solid;
 }
 
-.grid-item-hover {
-  background-color: yellow;
+.hover {
+  background-color: blue;
 }
