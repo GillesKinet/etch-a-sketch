@@ -1,8 +1,13 @@
-const containerDimensions = 16 * 16;
+const dimension = 16;
+const container = document.querySelector(".grid-container");
 
-const container = document.getElementById("grid-container");
-
-for (let i = 0; i < containerDimensions; i++) {
-  const gridDiv = document.createElement("div");
-  container.appendChild(gridDiv);
+for (let i = 0; i < dimension; i++) {
+  const gridRow = document.createElement("div");
+  container.appendChild(gridRow);
+  gridRow.classList.add("grid-row");
+  for (let i = 0; i < dimension; i++) {
+    const gridItem = document.createElement("div");
+    gridRow.appendChild(gridItem);
+    gridItem.classList.add("grid-item");
+  }
 }
