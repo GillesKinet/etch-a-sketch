@@ -11,3 +11,11 @@ for (let i = 0; i < dimension; i++) {
     gridItem.classList.add("grid-item");
   }
 }
+
+const gridItems = document.querySelectorAll(".grid-item");
+
+gridItems.forEach((item) => {
+  item.addEventListener("mouseover", (e) => {
+    e.target.style.background = "blue";
+  });
+});
