@@ -1,0 +1,21 @@
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-item {
+  width: 60px;
+  height: 60px;
+  flex: 1;
+  border: 1px black solid;
+}
+
+.grid-item-hover {
+  background-color: yellow;
+}
