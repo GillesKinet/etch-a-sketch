@@ -22,7 +22,7 @@ function createGrid(dimension = gridDimension) {
   const gridItems = document.querySelectorAll(".grid-item");
   gridItems.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
-      e.target.classList.add("hover");
+      e.target.style.backgroundColor = randomBackgroundColor();
       e.target.style.opacity = opacity;
       opacity += 0.1;
     });
@@ -54,3 +54,12 @@ newGridButton.addEventListener("click", () => {
   createGrid(gridDimension);
   opacity = 0.1;
 });
+
+function randomBackgroundColor() {
+  // https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php
+  const x = Math.floor(Math.random() * 256);
+  const y = Math.floor(Math.random() * 256);
+  const z = Math.floor(Math.random() * 256);
+  const bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  return bgColor;
+}
