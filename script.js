@@ -1,4 +1,5 @@
 let gridDimension = 16;
+let opacity = 0.1;
 
 const body = document.querySelector("body");
 const newGridButton = document.createElement("button");
@@ -19,10 +20,12 @@ function createGrid(dimension = gridDimension) {
     }
   }
   const gridItems = document.querySelectorAll(".grid-item");
-
+  opacity = 0.1;
   gridItems.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
       e.target.classList.add("hover");
+      e.target.style.opacity = opacity;
+      opacity += 0.1;
     });
   });
 }
