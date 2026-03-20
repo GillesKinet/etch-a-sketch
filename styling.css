@@ -21,8 +21,9 @@ body {
 }
 
 .grid-item {
-  width: auto;
-  height: 60px;
+  aspect-ratio: 1 / 1; /*https://hojelse.medium.com/make-a-truly-responsive-square-in-css-d917f5ef286d??*/
+  width: 100%;
+  max-height: 100%;
   flex: 1;
   border: 1px black solid;
 }
